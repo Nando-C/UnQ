@@ -15,7 +15,7 @@ Scan the QR code on your table, order into a cart you share with everyone sittin
 
 ## Try it
 
-The demo runs at [un-q.vercel.app](https://un-q.vercel.app). Its API sleeps on a free tier, so the first page can take up to a minute to answer; after that it is quick. Payments run in test mode: nothing is charged.
+The demo runs at [un-q.vercel.app](https://un-q.vercel.app). Its API sleeps on a free tier, so the first page can take up to a minute to answer; after that it is quick. Payments run in test mode: nothing is charged. The data is rewritten every night: the venues keep ninety days of history ending yesterday, and whatever was ordered at them the day before is gone by morning; an account you create stays.
 
 **As a diner, on your phone.** Scan the code with your camera, or tap it if you are reading this on a phone. It puts you at the Fire Place table of Rocketlit, a demo café. Adding an item asks you to sign in: create an account, sign in with Google, or use `frank@mail.com` with the password `UnqTester1`. Pay by card with Stripe's test card `4242 4242 4242 4242`, any future expiry and any CVC.
 
