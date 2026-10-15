@@ -21,7 +21,7 @@ The demo runs at [un-q.vercel.app](https://un-q.vercel.app). Its API sleeps on a
 
 <a href="https://un-q.vercel.app/shops/6158a19282eaef10787cd6f3/tables/61702525cc1ec6af70a92f35"><img src="https://raw.githubusercontent.com/Nando-C/UnQ-FE/main/docs/images/qr-fire-place.png" alt="The QR code of the demo table" height="180"></a>
 
-**As the venue, on a laptop.** Sign in as `manager@mail.com` with the password `UnqManager1`. Three venues are yours, with ninety days of payments behind them, and Rocketlit's tables show every state the manager's page can tell: ordering, a selection held too long, a sold-out item in a cart, a payment the provider is still holding, a diner still to be paid back, and a deleted table whose last cart can still be refunded. Each venue's Sales tab reads its payments as a report: the trend against the period before, when it sells, what the menu earns, refunds by cause, and highlights in plain sentences.
+**As the venue, on a laptop.** Sign in as `manager@mail.com` with the password `UnqManager1`. Three venues are yours, with ninety days of payments behind them. Each card shows the venue at a glance: net sales today and over the last seven days against the seven before, the best seller, a highlight, and what its tables need right now. Rocketlit's tables show every state the manager's page can tell: ordering, a selection held too long, a sold-out item in a cart, a payment the provider is still holding, a diner still to be paid back, and a deleted table whose last cart can still be refunded. Each venue's Sales tab reads its payments as a report: the trend against the period before, when it sells, what the menu earns, refunds by cause, and highlights in plain sentences.
 
 <img src="https://raw.githubusercontent.com/Nando-C/UnQ-FE/main/docs/images/sales.png" alt="The Sales tab on a desktop: the period chips, the headline figures with their change on the period before, and the trend of net sales with a dashed line for the period before and a 7-day average" width="720">
 
@@ -89,7 +89,7 @@ The API needs a MongoDB and test-mode credentials from Stripe, PayPal, Google an
 
 ## Roadmap
 
-Shipped in 2.2.0: several devices per account, and the sales report over the orders already recorded, with its highlights and CSV export. Next, in order: a [sales dashboard](https://github.com/Nando-C/UnQ/issues/2) on My Shops; [staff on a shop, then staff roles](https://github.com/Nando-C/UnQ/issues/3); [kitchen screens with live updates](https://github.com/Nando-C/UnQ/issues/4). Each issue says what the work is on each side. What each app knowingly doesn't do yet, and what it accepts, is on its known-gaps page and in its issues: [the client's](https://github.com/Nando-C/UnQ-FE/blob/main/docs/known-gaps.md) and [the API's](https://github.com/Nando-C/UnQ-BE/blob/main/docs/known-gaps.md).
+Shipped in 2.3.0: each shop at a glance on My Shops, over the sales report shipped in 2.2.0, and a demo that rewrites its data every night. Next, in order: [staff on a shop, then staff roles](https://github.com/Nando-C/UnQ/issues/3); [kitchen screens with live updates](https://github.com/Nando-C/UnQ/issues/4). Each issue says what the work is on each side. What each app knowingly doesn't do yet, and what it accepts, is on its known-gaps page and in its issues: [the client's](https://github.com/Nando-C/UnQ-FE/blob/main/docs/known-gaps.md) and [the API's](https://github.com/Nando-C/UnQ-BE/blob/main/docs/known-gaps.md).
 
 ## About
 
