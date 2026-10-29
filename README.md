@@ -93,7 +93,38 @@ The API needs a MongoDB and test-mode credentials from Stripe, PayPal, Google an
 
 ## Roadmap
 
-Shipped in 2.5.0: staff roles, after staff on a shop in 2.4.0 ([the issue](https://github.com/Nando-C/UnQ/issues/3)): a shop has an owner and members, each with a role, owner, manager, till, floor or kitchen, that decides what they see and can press; each shop at a glance on My Shops and the demo that rewrites its data every night came in 2.3.0. Next: [kitchen screens with live updates](https://github.com/Nando-C/UnQ/issues/4). Each issue says what the work is on each side. What each app knowingly doesn't do yet, and what it accepts, is on its known-gaps page and in its issues: [the client's](https://github.com/Nando-C/UnQ-FE/blob/main/docs/known-gaps.md) and [the API's](https://github.com/Nando-C/UnQ-BE/blob/main/docs/known-gaps.md).
+```mermaid
+%%{init: {"theme": "base", "themeVariables": {"cScale0": "#0F6E66", "cScaleLabel0": "#FFFFFF", "cScale1": "#B4530A", "cScaleLabel1": "#FFFFFF", "cScale2": "#4C3FB8", "cScaleLabel2": "#FFFFFF", "textColor": "#7D8590", "lineColor": "#7D8590"}}}%%
+timeline
+    title Where UnQ has got to, and what comes next
+    section 2021 to 2025
+        Capstone : A five-week solo build
+                 : Shared cart, PayPal, the manager pages
+        1.0.0 : The capstone as built, tagged
+    section The rebuild, October 2026
+        2.0.0 : New frameworks on both sides
+              : Card payments beside PayPal
+              : The shared-cart selection
+        2.1.0 : The docs and the OpenAPI contract
+              : Screenshots from the live demo
+        2.2.0 : Sales reports with charts and CSV
+              : Several devices per account
+        2.3.0 : Each shop at a glance on My Shops
+              : The demo rewritten every night
+        2.4.0 : Staff on a shop
+              : An administrator role
+        2.5.0 : Staff roles, till, floor, kitchen
+              : Each route names its ability
+    section Next
+        Kitchen : Screens with a queue and prep states
+                : Live updates, for diners too
+        Map : The venues near you on the home page
+            : A pin on each shop, set by its staff
+        Going live : Live Stripe and PayPal keys on the host
+                   : A switch, not a release
+```
+
+Shipped in 2.5.0: staff roles, after staff on a shop in 2.4.0 ([the issue](https://github.com/Nando-C/UnQ/issues/3)): a shop has an owner and members, each with a role, owner, manager, till, floor or kitchen, that decides what they see and can press; each shop at a glance on My Shops and the demo that rewrites its data every night came in 2.3.0. Next, in order: [kitchen screens with live updates](https://github.com/Nando-C/UnQ/issues/4); [a map of the venues on the home page](https://github.com/Nando-C/UnQ/issues/10). Each issue says what the work is on each side. What each app knowingly doesn't do yet, and what it accepts, is on its known-gaps page and in its issues: [the client's](https://github.com/Nando-C/UnQ-FE/blob/main/docs/known-gaps.md) and [the API's](https://github.com/Nando-C/UnQ-BE/blob/main/docs/known-gaps.md).
 
 ## About
 
