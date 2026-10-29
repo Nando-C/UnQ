@@ -4,8 +4,8 @@ Scan the QR code on your table, order into a cart you share with everyone sittin
 
 [**Live demo**](https://un-q.vercel.app) · [API reference](https://un-q.vercel.app/api/docs) · [UnQ-FE](https://github.com/Nando-C/UnQ-FE), the web client · [UnQ-BE](https://github.com/Nando-C/UnQ-BE), the API
 
-[![Client CI](https://github.com/Nando-C/UnQ-FE/actions/workflows/ci.yml/badge.svg)](https://github.com/Nando-C/UnQ-FE/actions/workflows/ci.yml)
-[![API CI](https://github.com/Nando-C/UnQ-BE/actions/workflows/ci.yml/badge.svg)](https://github.com/Nando-C/UnQ-BE/actions/workflows/ci.yml)
+[![Client CI](https://img.shields.io/github/actions/workflow/status/Nando-C/UnQ-FE/ci.yml?branch=main&label=client%20CI)](https://github.com/Nando-C/UnQ-FE/actions/workflows/ci.yml)
+[![API CI](https://img.shields.io/github/actions/workflow/status/Nando-C/UnQ-BE/ci.yml?branch=main&label=API%20CI)](https://github.com/Nando-C/UnQ-BE/actions/workflows/ci.yml)
 [![Licence: MIT](https://img.shields.io/badge/licence-MIT-635bff)](./LICENSE)
 
 <p>
@@ -21,7 +21,11 @@ The demo runs at [un-q.vercel.app](https://un-q.vercel.app). Its API sleeps on a
 
 <a href="https://un-q.vercel.app/shops/6158a19282eaef10787cd6f3/tables/61702525cc1ec6af70a92f35"><img src="https://raw.githubusercontent.com/Nando-C/UnQ-FE/main/docs/images/qr-fire-place.png" alt="The QR code of the demo table" height="180"></a>
 
-**As the venue, on a laptop.** Sign in as `manager@mail.com` with the password `UnqManager1`. Three venues are yours, with ninety days of payments behind them. Each card shows the venue at a glance: net sales today and over the last seven days against the seven before, the best seller, a highlight, and what its tables need right now. Rocketlit's tables show every state the manager's page can tell: ordering, a selection held too long, a sold-out item in a cart, a payment the provider is still holding, a diner still to be paid back, and a deleted table whose last cart can still be refunded. Each venue's Sales tab reads its payments as a report: the trend against the period before, when it sells, what the menu earns, refunds by cause, and highlights in plain sentences.
+**As the venue, on a laptop.** Sign in as `manager@mail.com` with the password `UnqManager1`. Three venues are yours, with ninety days of payments behind them, each with a story of its own. Rocketlit, the café, is doing well: nearly twice as busy as three months ago, with a bad week five weeks back that the refund charts pick out and its best week the one just gone. Marlow Street Kitchen, the restaurant, is struggling: half as busy as it was, and last week was its worst. The Saturday Market Pop-up trades one day a week, opened less than three weeks ago and is growing fast, so its month has nothing before it to compare with. How the history is shaped, and why today's figure is nearly empty until the day's visitors order, is on the API's [operations page](https://github.com/Nando-C/UnQ-BE/blob/main/docs/operations.md#the-demo-data). Each card shows the venue at a glance: net sales today and over the seven days to yesterday against the seven before, the best seller, a highlight, and what its tables need right now. The café has staff with roles, a second manager, a till and a kitchen: its Staff section shows them, and the owner adds someone with a role, changes a role, removes a member or hands the shop over.
+
+<img src="https://raw.githubusercontent.com/Nando-C/UnQ-FE/main/docs/images/my-shops.png" alt="My Shops on a desktop: three venue cards, each with its photo and name, net sales today and over the last seven days with the change on the week before, the best seller and a highlight; the café and the pop-up up on the week before, the restaurant down" width="720">
+
+Rocketlit's tables show every state the manager's page can tell: ordering, a selection held too long, a sold-out item in a cart, a payment the provider is still holding, a diner still to be paid back, and a deleted table whose last cart can still be refunded. Each venue's Sales tab reads its payments as a report: the trend against the period before, when it sells, what the menu earns, refunds by cause, and highlights in plain sentences.
 
 <img src="https://raw.githubusercontent.com/Nando-C/UnQ-FE/main/docs/images/sales.png" alt="The Sales tab on a desktop: the period chips, the headline figures with their change on the period before, and the trend of net sales with a dashed line for the period before and a 7-day average" width="720">
 
@@ -31,7 +35,7 @@ More cards to try, and what each screen does, are in the client's [Try it](https
 
 **For diners.** Scan, see the menu with what is sold out, add to the table's shared cart from any number of phones, pick the units you will pay for, and pay by card, Apple Pay, Google Pay or PayPal. If a payment is interrupted, the table tells you how it ended on your next visit.
 
-**For venues.** Shops, menus with photos, availability and soft deletes; tables with printable QR codes; a page that shows every table's state and what needs a look; a sheet per table to release a stuck selection, remove an item, close or merge carts, refund lines of a payment with a reason, check a payment the provider is holding, and settle what a provider won't return. A sales page per shop over the payments: the period stepped and compared with the one before, a trend of any measure, when the shop sells by weekday and hour, what the menu earns, refunds by cause, new against returning diners, the tables, and highlights in plain sentences; the tables as CSV.
+**For venues.** Shops, menus with photos, availability and soft deletes; tables with printable QR codes; staff with roles, an owner who adds managers, tills, floor staff and kitchens by email, each seeing and pressing what their role holds; a page that shows every table's state and what needs a look; a sheet per table to release a stuck selection, remove an item, close or merge carts, refund lines of a payment with a reason, check a payment the provider is holding, and settle what a provider won't return. A sales page per shop over the payments: the period stepped and compared with the one before, a trend of any measure, when the shop sells by weekday and hour, what the menu earns, refunds by cause, new against returning diners, the tables, and highlights in plain sentences; the tables as CSV.
 
 **For the books.** An order per payment, a record per card payment and a pay-back per sum staff must return by hand, each outliving the cart, table and shop it came from.
 
@@ -68,7 +72,7 @@ flowchart LR
 
 | | [UnQ-FE](https://github.com/Nando-C/UnQ-FE) | [UnQ-BE](https://github.com/Nando-C/UnQ-BE) |
 |---|---|---|
-| What it is | The web client: the diner's menu, cart and checkout; the manager's shops, menus and tables | The API: data model, authentication, the manager's tools and the money |
+| What it is | The web client: the diner's menu, cart and checkout; the manager's shops, menus, tables, staff and sales | The API: data model, authentication, the manager's tools and the money |
 | Stack | React 19, TypeScript 6, Vite 8, Redux Toolkit, React Router 7, React-Bootstrap, Stripe Payment Element, PayPal | Express 5, TypeScript 6, MongoDB with Mongoose 9, zod, Stripe, PayPal, Google OAuth, Cloudinary |
 | Tests | Vitest with Testing Library and msw; a headless-Chrome layout audit from 320px to 1440px and at 200% text; a contract test against the API's OpenAPI document | A Jest integration suite driving the app against an in-memory MongoDB with a fake Stripe that replays the races; an index test that fails if a main route scans a collection |
 | Runs on | Vercel | Render, with MongoDB Atlas |
@@ -89,7 +93,7 @@ The API needs a MongoDB and test-mode credentials from Stripe, PayPal, Google an
 
 ## Roadmap
 
-Shipped in 2.3.0: each shop at a glance on My Shops, over the sales report shipped in 2.2.0, and a demo that rewrites its data every night. Next, in order: [staff on a shop, then staff roles](https://github.com/Nando-C/UnQ/issues/3); [kitchen screens with live updates](https://github.com/Nando-C/UnQ/issues/4). Each issue says what the work is on each side. What each app knowingly doesn't do yet, and what it accepts, is on its known-gaps page and in its issues: [the client's](https://github.com/Nando-C/UnQ-FE/blob/main/docs/known-gaps.md) and [the API's](https://github.com/Nando-C/UnQ-BE/blob/main/docs/known-gaps.md).
+Shipped in 2.5.0: staff roles, after staff on a shop in 2.4.0 ([the issue](https://github.com/Nando-C/UnQ/issues/3)): a shop has an owner and members, each with a role, owner, manager, till, floor or kitchen, that decides what they see and can press; each shop at a glance on My Shops and the demo that rewrites its data every night came in 2.3.0. Next: [kitchen screens with live updates](https://github.com/Nando-C/UnQ/issues/4). Each issue says what the work is on each side. What each app knowingly doesn't do yet, and what it accepts, is on its known-gaps page and in its issues: [the client's](https://github.com/Nando-C/UnQ-FE/blob/main/docs/known-gaps.md) and [the API's](https://github.com/Nando-C/UnQ-BE/blob/main/docs/known-gaps.md).
 
 ## About
 
